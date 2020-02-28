@@ -16,25 +16,20 @@ df = pd.read_csv(filename)
 
 
 def assign_training():
+    """Asks for input of training type and confirms with user.
+     Also adds training to each employee in the data frame."""
     training = input("What type of training?:")
-    if training == 'CLEAR':
-        while True:
-            protection_prompt = input("Are you sure you want to clear all training?(Y/N):")
-            if protection_prompt == "Y" or "y":
-                for index, row in df.iterrows():
-                    df.loc[df.index[index], 'TRAINING'] = "None"
-                break
-            elif protection_prompt == "N" or "n":
-                assign_training()
-            else:
-                print("Please only type Y or N.")
-    else:
+    training_confirm = input(f"You want add '{training}'? (Y/N):")
+    if training_confirm.upper() == 'Y':
         for index, row in df.iterrows():
             if 'None' not in df.loc[df.index[index], 'TRAINING']:
                 df.loc[df.index[index], 'TRAINING'] += ", " + training
             elif 'None' in df.loc[df.index[index], 'TRAINING']:
                 df.loc[df.index[index], 'TRAINING'] = df.loc[df.index[index], 'TRAINING'].replace('None', '')
                 df.loc[df.index[index], 'TRAINING'] += training
+    elif training_confirm.upper() == 'N':
+        print("Please re-enter the type of training.")
+        assign_training()
 
 
 assign_training()
@@ -43,4 +38,4 @@ assign_training()
 print(df)
 
 # Exporting new data frame to original CSV file.
-df.to_csv(r'employee_database\employee_database.csv', index=False)
+df.to_csv(r'employee_database\employees_database.csv', index=False)

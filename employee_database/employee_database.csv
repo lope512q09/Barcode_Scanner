@@ -1,6 +1,6 @@
 BARCODE,NAME,DEPT_NUM,POSITION,TRAINING
-12345,Manuel,53,Floor Manager,None
-12346,Ethan,69,Fork Lift Driver,None
-12347,James,420,Janitor,None
-12348,Bob,7,Machinist,None
-12349,Bart,66,Chiphouse,None
+12345,Manuel,53,Floor Manager,Hot Work
+12346,Ethan,69,Fork Lift Driver,"CPR, Hot Work"
+12347,James,420,Janitor,Hot Work
+12348,Bob,7,Machinist,Hot Work
+12349,Bart,66,Chiphouse,Hot Work
