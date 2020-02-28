@@ -1,16 +1,36 @@
 import pandas as pd
+import warnings
 
-"""Enter training to barcode data."""
-
-# Scanning barcodes of every person in training session.
-f = open("barcodes/demo.txt", "r")
-barcodes = []
-for line in f:
-    barcodes.append(line)
-f.close()
-
+# Open data base using pandas data frame.
 filename = "employee_database/employees_database.csv"
 df = pd.read_csv(filename)
+
+# Scanning barcodes and adding them to a new file.
+scans = []
+active = True
+while active:
+    scan = input("Scan employee's barcode and it will be added to the list:")
+    scans.append(scan)
+    continue_scanning_prompt = input("Would you like to add another employee? (Y/N):")
+    if continue_scanning_prompt.title() == 'Y':
+        continue
+    elif continue_scanning_prompt.title() == 'N':
+        print("These employees have been added to the training session:\n")
+
+        # Linking scanned barcode to employee name
+        for scan in scans:
+            with warnings.catch_warnings():
+                warnings.simplefilter('ignore')
+                name = df.at[df['BARCODE'].eq(scan).idxmax(), 'NAME']
+                print(f"Retrieving {scan}...")
+                print(f"{scan}, {name.title()}")
+        active = False
+
+barcodes = open(r'barcodes/barcodes.txt', 'w')
+
+for scan in scans:
+    barcodes.write(scan)
+
 
 # Assigning training to each employee.
 
