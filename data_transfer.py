@@ -2,12 +2,12 @@ import pandas as pd
 import csv
 
 # Open data base using pandas data frame.
-filename = "employee_database/employees_database.csv"
+filename = "employee_database/employee_database.csv"
 df = pd.read_csv(filename)
 print(df)
 
 # Writing lines to dictionaries.
-with open('employee_database/employees_database.csv', newline='') as employee_csv:
+with open('employee_database/employee_database.csv', newline='') as employee_csv:
     reader = csv.DictReader(employee_csv)
 
     # Scanning barcodes and adding them to a new file.
@@ -66,4 +66,4 @@ assign_training()
 print(df)
 
 # Exporting new data frame to original CSV file.
-df.to_csv(r'employee_database\employees_database.csv', index=False)
+df.to_csv(r'employee_database\employee_database.csv', index=False)
