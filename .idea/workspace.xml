@@ -11,7 +11,6 @@
       <change beforePath="$PROJECT_DIR$/data_transfer.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_transfer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employee_database/employees_database.csv" beforeDir="false" afterPath="$PROJECT_DIR$/employee_database/employee_database.csv" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/GUI" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -52,20 +51,8 @@
       <recent name="C:\Users\angela.willis\Documents\Manuel Lopez Coding\Python\Barcode Scanner" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Python.data_transfer_gui (1)">
-    <configuration name="data_transfer (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="barcode_app_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Barcode Scanner" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,7 +64,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_transfer.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\angela.willis\Documents\Manuel Lopez Coding\Python\Barcode Scanner\barcode_app_class.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,10 +160,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.data_transfer_gui (1)" />
+        <item itemvalue="Python.barcode_app_class" />
         <item itemvalue="Python.data_transfer_gui" />
         <item itemvalue="Python.tkinter_test (1)" />
         <item itemvalue="Python.tkinter_test" />
-        <item itemvalue="Python.data_transfer (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -210,26 +197,26 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1897" height="347" key="GridCell.Tab.0.bottom" timestamp="1583168307470">
+    <state width="1897" height="207" key="GridCell.Tab.0.bottom" timestamp="1583340104173">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1897" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582909269534" />
-    <state width="1897" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583168307470" />
-    <state width="1897" height="347" key="GridCell.Tab.0.center" timestamp="1583168307469">
+    <state width="1897" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583340104173" />
+    <state width="1897" height="207" key="GridCell.Tab.0.center" timestamp="1583340104172">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1897" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582909269534" />
-    <state width="1897" height="347" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583168307469" />
-    <state width="1897" height="347" key="GridCell.Tab.0.left" timestamp="1583168307469">
+    <state width="1897" height="207" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583340104172" />
+    <state width="1897" height="207" key="GridCell.Tab.0.left" timestamp="1583340104171">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1897" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582909269534" />
-    <state width="1897" height="347" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583168307469" />
-    <state width="1897" height="347" key="GridCell.Tab.0.right" timestamp="1583168307470">
+    <state width="1897" height="207" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583340104171" />
+    <state width="1897" height="207" key="GridCell.Tab.0.right" timestamp="1583340104172">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1897" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582909269534" />
-    <state width="1897" height="347" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583168307470" />
+    <state width="1897" height="207" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583340104172" />
     <state width="1897" height="347" key="GridCell.Tab.1.bottom" timestamp="1583168307470">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -246,9 +233,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1897" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583168307470" />
-    <state x="460" y="161" key="SettingsEditor" timestamp="1582900594008">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2380" y="161" key="SettingsEditor" timestamp="1583333566351">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="460" y="161" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582900594008" />
+    <state x="2380" y="161" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583333566351" />
+    <state x="303" y="64" width="1439" height="838" key="dock-window-1" timestamp="1583336746943">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="303" y="64" width="1439" height="838" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583336746943" />
   </component>
 </project>
