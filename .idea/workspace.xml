@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13461c74-253e-47bc-8c47-9ccd84c1d584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_transfer_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Barcode Scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Barcode Scanner.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Barcode Scanner Shortcut.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/tkinter_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/tkinter_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOOK UP TKINTER FOR GRAPHICAL INTERFACE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barcodes/barcodes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_transfer.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_transfer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee_database/employees_database.csv" beforeDir="false" afterPath="$PROJECT_DIR$/employee_database/employee_database.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_transfer_gui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_database/employee_database.csv" beforeDir="false" afterPath="$PROJECT_DIR$/employee_database/employee_database.csv" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/GUI" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -51,7 +49,19 @@
       <recent name="C:\Users\angela.willis\Documents\Manuel Lopez Coding\Python\Barcode Scanner" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.data_transfer_gui (1)">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.data_transfer_gui (2)">
     <configuration name="barcode_app_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Barcode Scanner" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,6 +75,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\angela.willis\Documents\Manuel Lopez Coding\Python\Barcode Scanner\barcode_app_class.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="data_transfer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Barcode Scanner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_transfer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,6 +125,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="data_transfer_gui (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Barcode Scanner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exe/data_transfer_gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="data_transfer_gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Barcode Scanner" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,55 +167,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tkinter_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Barcode Scanner" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GUI" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI/tkinter_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tkinter_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Barcode Scanner" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\lope512q09\Desktop\Barcode_Scanner\GUI\tkinter_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data_transfer_gui (2)" />
+        <item itemvalue="Python.data_transfer" />
         <item itemvalue="Python.data_transfer_gui (1)" />
         <item itemvalue="Python.barcode_app_class" />
         <item itemvalue="Python.data_transfer_gui" />
-        <item itemvalue="Python.tkinter_test (1)" />
-        <item itemvalue="Python.tkinter_test" />
       </list>
     </recent_temporary>
   </component>
