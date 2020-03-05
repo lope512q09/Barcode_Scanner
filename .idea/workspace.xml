@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13461c74-253e-47bc-8c47-9ccd84c1d584" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Barcode Scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Barcode Scanner.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exe/BCI_Icon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_transfer_gui.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee_database/employee_database.csv" beforeDir="false" afterPath="$PROJECT_DIR$/employee_database/employee_database.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exe/data_transfer_gui.exe.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exe/data_transfer_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/exe/data_transfer_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exe/icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/free_icon.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,12 +36,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/exe" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lope512q09\Desktop\Barcode_Scanner\exe" />
       <recent name="C:\Users\lope512q09\Desktop\Barcode_Scanner\GUI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

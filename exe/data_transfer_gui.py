@@ -141,8 +141,8 @@ with open('C:/Users/lope512q09/Desktop/Barcode_Scanner/employee_database/employe
         global root
         root = tk.Tk()
         root.geometry('400x300')
-        root.iconbitmap('C:/Users/lope512q09/Desktop/Barcode_Scanner/exe/icon.ico')
-        root.title('Barcode Scanner')
+        root.iconbitmap('C:/Users/lope512q09/Desktop/Barcode_Scanner/exe/BCI_Icon.ico')
+        root.title('BCI')
         App(root).pack(expand=True, fill='both')
         root.mainloop()
 
