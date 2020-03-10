@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 import tkinter as tk
 
-file_path = 'S:/PLANT/DOJO/BCI (BARCODE CHECK-IN)/employee_database.csv'
+file_path = 'C:/Users/lope512q09/Desktop/Barcode_Scanner/employee_database.csv'
 
 with open(file_path, newline='')\
         as employee_csv:
@@ -13,7 +13,7 @@ with open(file_path, newline='')\
     df = pd.read_csv(file_path)
 
     temp_employee_dicts = []
-    training = ''
+    trainings = []
 
     class App(tk.Frame):
         def __init__(self, master):
@@ -38,8 +38,9 @@ with open(file_path, newline='')\
         def on_return_training(self, *args):
             global training
             training = self.training_entry.get()
+            trainings.append(training)
             self.training_entry.delete(0, 'end')
-            self.assign_training()
+            self.more_training()
 
         def no_command(self):
             self.entry.destroy()
@@ -74,7 +75,7 @@ with open(file_path, newline='')\
             self.training_entry = tk.Entry(self)
             self.training_entry.pack()
             self.training_entry.bind("<Return>", self.on_return_training)
-            self.training_button = tk.Button(self, text="Enter", command=self.assign_training)
+            self.training_button = tk.Button(self, text="Enter", command=self.more_training)
             self.training_button.pack()
 
         def yes_command(self):
@@ -89,6 +90,25 @@ with open(file_path, newline='')\
             self.barcode_button = tk.Button(self, text="Enter", command=self.more_employees)
             self.barcode_button.pack()
             self.entry.bind("<Return>", self.on_return_scan)
+
+        def training_yes_command(self):
+            self.yes_button.destroy()
+            self.no_button.destroy()
+            self.prompt_label.destroy()
+            self.barcode_prompt = tk.Label(self, text="Scan a barcode:", bg='#bfbd92')
+            self.barcode_prompt.pack()
+            self.entry = tk.Entry(self)
+            self.entry.focus()
+            self.entry.pack()
+            self.barcode_button = tk.Button(self, text="Enter", command=self.more_employees)
+            self.barcode_button.pack()
+            self.entry.bind("<Return>", self.on_return_scan)
+
+        def training_no_command(self):
+            self.training_yes_button.destroy()
+            self.training_no_button.destroy()
+            self.training_label.destroy()
+            self.assign_training()
 
         def more_employees(self):
             global temp_employee_dict
@@ -107,28 +127,50 @@ with open(file_path, newline='')\
             self.yes_button.pack()
             self.no_button.pack()
 
+        def more_training(self):
+            global training
+            training = self.training_entry.get()
+            if training not in trainings:
+                trainings.append(training)
+            for employee_label in self.employee_labels:
+                employee_label.destroy()
+            self.employees_list.destroy()
+            self.training_prompt.destroy()
+            self.training_entry.destroy()
+            self.training_button.destroy()
+            prompt = "Do you want to add another training?"
+            self.training_label = tk.Label(self, text=prompt, bg='#bfbd92')
+            self.training_label.pack()
+            self.training_yes_button = tk.Button(self, text="Yes", command=self.training_yes_command, bg='white')
+            self.training_no_button = tk.Button(self, text="No", command=self.training_no_command, bg='white')
+            self.training_yes_button.pack()
+            self.training_no_button.pack()
+
         def assign_training(self):
             """Asks for input of training type and confirms with user.
              Also adds training to each employee in the data frame based on the barcodes scanned earlier."""
-            global training
-            if training == '':
-               training = self.training_entry.get()
             self.training_button.destroy()
             self.employees_list.destroy()
             self.training_prompt.destroy()
             self.training_entry.destroy()
-            for employee_label in self.employee_labels:
-                employee_label.destroy()
-            for temp_dict in temp_employee_dicts:
-                for index, row in df.iterrows():
-                    if str(df.loc[df.index[index], 'BARCODE']) == temp_dict['BARCODE']:
-                        if 'None' not in df.loc[df.index[index], 'TRAINING']:
-                            df.loc[df.index[index], 'TRAINING'] += ", " + training
-                        elif 'None' in df.loc[df.index[index], 'TRAINING']:
-                            df.loc[df.index[index], 'TRAINING'] = df.loc[df.index[index], 'TRAINING'].replace(
-                                'None', '')
-                            df.loc[df.index[index], 'TRAINING'] += training
-            final_text = f"'{training}' has been added for each of these employees:"
+            for training in trainings:
+                for employee_label in self.employee_labels:
+                    employee_label.destroy()
+                for temp_dict in temp_employee_dicts:
+                    for index, row in df.iterrows():
+                        if str(df.loc[df.index[index], 'BARCODE']) == temp_dict['BARCODE']:
+                            if 'None' not in df.loc[df.index[index], 'TRAINING']:
+                                df.loc[df.index[index], 'TRAINING'] += ", " + training
+                            elif 'None' in df.loc[df.index[index], 'TRAINING']:
+                                df.loc[df.index[index], 'TRAINING'] = df.loc[df.index[index], 'TRAINING'].replace(
+                                    'None', '')
+                                df.loc[df.index[index], 'TRAINING'] += training
+            if len(trainings) == 1:
+                final_text = trainings.pop()
+            else:
+                training_string = ', '.join(map(str, trainings))
+                final_text = f"{training_string} has been added for each of these employees:"
+
             self.final_msg = tk.Label(self, text=final_text, bg='#bfbd92')
             self.final_msg.pack()
             for name in self.names:
